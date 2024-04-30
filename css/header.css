@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header */
+header{
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.info-evento {
+    font-size: 1.2rem;
+    line-height: 35px;
+}
+
+.item-logo {
+    padding-top: 10px;
+    padding-right: 7%;
+    border-right: 3px solid black;
+}
+/*Fin header*/

@@ -1,0 +1,35 @@
+/*Nav*/
+nav {
+    background-color: rgb(72, 170, 231);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    width: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    color: rgb(44, 3, 83);
+    transition: 1s;
+}
+
+nav a:hover {
+    background-color: rgb(48, 153, 185);
+    color: rgb(5, 85, 5);
+    transition: 1s;
+}
+/*Fin Nav*/

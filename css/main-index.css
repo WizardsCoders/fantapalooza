@@ -1,0 +1,120 @@
+/*main*/
+main{
+    display: grid;
+    gap: 3px;
+    margin: 3px 3px 3px 3px;
+    grid-template-areas: 
+                'flayer1 flayer2 flayer3'
+                'pack pack pack'
+                'youtube-wizard youtube-wizard youtube-wizard'
+                'youtube-warrior youtube-warrior youtube-warrior'
+                'youtube-monster youtube-monster youtube-monster'
+                'foto-info1 parrafo-info1 parrafo-info1'
+                'parrafo-info2 parrafo-info2 foto-info2 '
+                'foto-info3 parrafo-info3 parrafo-info3';
+}
+
+/*Seccion de flayers */
+
+.flayer-dia-1 {
+    grid-area: flayer1;
+    background-color: rgb(34, 4, 63);
+}
+
+.flayer-dia-1 img, .flayer-dia-2 img, .flayer-dia-3 img {
+    transition: 1s;
+}
+
+.flayer-dia-1 img:hover {
+    box-shadow: 0 0 10px rgb(182, 117, 243), 0 0 40px rgb(144, 105, 182), 0 0 80px rgb(159, 113, 202);
+    transition: 1s;
+}
+
+.flayer-dia-2 {
+    grid-area: flayer2;
+    background-color: rgb(3, 3, 73);
+    transition: 1s;
+}
+
+.flayer-dia-2 img:hover {
+    box-shadow: 0 0 10px rgb(87, 87, 202), 0 0 40px rgb(73, 73, 216), 0 0 80px rgb(84, 84, 218);
+    transition: 1s;
+}
+
+.flayer-dia-3 {
+    grid-area: flayer3;
+    background-color: rgb(1, 43, 1);
+    transition: 1s;
+}
+
+.flayer-dia-3 img:hover {
+    box-shadow: 0 0 10px rgb(81, 211, 81), 0 0 40px rgb(82, 218, 82), 0 0 80px rgb(83, 194, 83);
+    transition: 1s;
+}
+
+.item-pack {
+    grid-area: pack;
+    background: rgb(117,54,208);
+    background: linear-gradient(125deg, rgb(52, 10, 92) 23%, rgb(3, 3, 73) 56%, rgb(5, 58, 5) 70%);
+}
+.youtube-wizard {
+    grid-area: youtube-wizard;
+    background-color: rgb(34, 4, 63);
+}
+.youtube-warrior {
+    grid-area: youtube-warrior;
+    background-color:  rgb(3, 3, 73);
+}
+.youtube-monster {
+    grid-area: youtube-monster;
+    background-color: rgb(1, 43, 1);
+}
+main > section {
+    text-align: center;
+    padding: 30px;
+}
+/* final seccion flayers*/
+
+/*seccion articulos informativos*/
+
+.info-img1 {
+    grid-area: foto-info1;
+    background-color: black;
+    text-align: center;
+    background-image: url(../multimedia/articulos-prueba.jpg);
+}
+.info-parrafo1 {
+    grid-area: parrafo-info1;
+    background-color: rgb(34, 4, 63);
+    color: rgb(187, 154, 218);
+}
+.info-img2 {
+    grid-area: foto-info2;
+    background-color: black;
+    text-align: center;
+}
+.info-parrafo2 {
+    grid-area: parrafo-info2;
+    background-color: rgb(3, 3, 73);
+    color:rgb(140, 140, 231);
+}
+.info-img3 {
+    grid-area: foto-info3;
+    background-color: black;
+    text-align: center;
+}
+.info-parrafo3 {
+    grid-area: parrafo-info3;
+    background-color: rgb(1, 43, 1);
+    color:rgb(111, 187, 111);
+}
+main > article{
+    align-content: center;
+    padding: 10px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    line-height: 27px;
+}
+/*Fin seccion articulos informativos*/
+
+/*fin main*/

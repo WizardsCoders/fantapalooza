@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cinzel:wght@400..900&family=Grenze+Gotisch:wght@200&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sacramento&family=Sedgwick+Ave+Display&display=swap');
+
+/*botones*/
+button {
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    padding: 20px;
+    border-radius: 20%;
+    margin-top: 20px;
+}
+
+#comprar-dia1 {
+    background-color: rgb(61, 10, 109);
+    color: rgb(187, 154, 218);
+}
+
+#comprar-dia2 {
+    background-color: rgb(5, 5, 75);
+    color:rgb(140, 140, 231);
+}
+
+#comprar-dia3 {
+    background-color: rgb(3, 71, 3);
+    color:rgb(111, 187, 111);
+}
+
+#comprar-dia1:hover {
+    background-color: rgb(115, 48, 177);
+    color: rgb(30, 3, 54);
+}
+
+#comprar-dia2:hover {
+    background-color: rgb(56, 56, 219);
+    color:rgb(2, 2, 53);
+}
+
+#comprar-dia3:hover {
+    background-color: rgb(56, 224, 56);
+    color:rgb(2, 48, 2);
+}
+
+#comprar-pack {
+    margin-bottom: 15px;
+    width: 30%;
+    background: rgb(117,54,208);
+    background: linear-gradient(125deg, rgba(117,54,208,1) 23%, rgba(29,88,253,0.562062324929972) 56%, rgb(14, 117, 2) 70%);
+    transition: 1s;
+}
+
+#comprar-pack:hover {
+    box-shadow: 0 0 20px rgb(87, 87, 202), 0 0 50px rgb(182, 117, 243), 0 0 90px rgb(81, 211, 81);
+    transition: 1s;
+}
+
+section > button {
+    transition: 0.5s;
+}
+
+.wizard, .warrior, .monster {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.wizard {
+    font-family: "Cinzel", serif;
+    color: rgb(27, 3, 48);
+}
+.warrior {
+    font-family: "Raleway", sans-serif;
+    color: rgb(22, 4, 184);
+}
+.monster {
+    font-family: "Sedgwick Ave Display", cursive;
+    color: rgb(2, 165, 2);
+}
+/*fin botones*/
