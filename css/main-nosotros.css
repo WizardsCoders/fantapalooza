@@ -1,0 +1,61 @@
+main{
+    display: grid;
+    gap: 10px;
+    margin-top: 7px;
+    grid-template-areas: 
+                    'presentacion-nahuel presentacion-nicolas'
+                    'presentacion-johana presentacion-facundo';
+}
+
+.presentacion {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(1, 43, 1);
+}
+
+.presentacion-nahuel{
+    grid-area: presentacion-nahuel;
+    
+}
+
+.presentacion-nicolas{
+    grid-area: presentacion-nicolas;
+    
+}
+
+.presentacion-johana{
+    grid-area: presentacion-johana;
+}
+
+.presentacion-facundo{
+    grid-area: presentacion-facundo;
+}
+
+article > img {
+    border-radius: 50%;
+    width: 45vh;
+    height: 45vh;
+}
+
+article > h2 {
+    font-size: 2rem;
+    letter-spacing: 1.2px;
+    margin: 10px;
+    padding: 20px;
+    border: aquamarine solid 3px;
+    background-color:rgb(111, 187, 111);
+    color: rgb(1, 43, 1);
+    border-radius: 20px;
+    font-style: italic;
+}
+
+article > p {
+    letter-spacing: 1.5px;
+    font-size: 1.3rem;
+    margin: 10px;
+    padding: 40px;
+    border: solid aquamarine 3px;
+    background-color: aliceblue;
+    color: rgb(1, 43, 1);
+    border-radius: 20px;
+}
