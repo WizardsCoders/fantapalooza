@@ -23,6 +23,7 @@ main{
 
 .flayer-dia-1 img, .flayer-dia-2 img, .flayer-dia-3 img {
     transition: 1s;
+    width: 50vh;
 }
 
 .flayer-dia-1 img:hover {
