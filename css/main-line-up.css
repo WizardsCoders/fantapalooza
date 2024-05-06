@@ -1,0 +1,26 @@
+main {
+    background-color: rgba(0, 0, 0, 0.911);
+    text-align: center;
+    padding: 50px;
+}
+
+main h2 {
+    color: aliceblue;
+    margin-bottom: 50px;
+    padding: 20px;
+    font-size: 3rem;
+}
+
+.line-up img {
+    margin-bottom: 60px;
+    width: 110vh;
+    align-items: center;
+    transition: 1s;
+    box-shadow: 0 0 10px rgb(182, 117, 243), 0 0 40px rgb(144, 105, 182), 0 0 80px rgb(159, 113, 202);
+}
+
+.line-up img:hover {
+    box-shadow: 0 0 50px rgb(255, 255, 255), 0 0 60px rgb(255, 255, 255), 0 0 90px rgb(255, 255, 255);
+    transition: 1s;
+    border-radius: 6%;
+}

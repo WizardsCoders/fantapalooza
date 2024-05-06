@@ -14,6 +14,23 @@ main{
                 'foto-info3 parrafo-info3 parrafo-info3';
 }
 
+/*Main de 4 columnas pensar una forma de que quede bien quizá en el hueco vacío hacer un aside*/
+/*
+main{
+    display: grid;
+    gap: 3px;
+    margin: 3px 3px 3px 3px;
+    grid-template-areas: 
+                'flayer1 flayer2 flayer3 .'
+                'pack pack pack pack'
+                'youtube-wizard youtube-wizard youtube-warrior youtube-warrior'
+                'youtube-monster youtube-monster youtube-monster youtube-monster'
+                'foto-info1 parrafo-info1 parrafo-info1 parrafo-info1'
+                'parrafo-info2 parrafo-info2 parrafo-info2 foto-info2'
+                'foto-info3 parrafo-info3 parrafo-info3 parrafo-info3';
+}
+*/
+
 /*Seccion de flayers */
 
 .flayer-dia-1 {
