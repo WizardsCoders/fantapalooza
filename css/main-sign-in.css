@@ -1,0 +1,17 @@
+main {
+    background-color: rgb(81, 211, 81)
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+form { 
+    background-color: rgb(87, 87, 202);
+    margin: 20px 20px
+}
+
+form input, p, label, select, textarea{
+    margin: 10px 10px;
+    padding: 10px
+}
