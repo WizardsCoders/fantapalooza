@@ -29,16 +29,19 @@ footer {
   width: 100%;
   background: #ffff;
   color: #333;
+  overflow-x: hidden; 
+  overflow-y: hidden; 
 }
 
 .contenu-footer {
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%; 
   display: flex;
   justify-content: center;
   align-items: flex-start;
   font-size: 20px;
   padding: 50px 0 100px;
+  white-space: nowrap; 
+  overflow-x: auto; 
 }
 
 .bloc {
