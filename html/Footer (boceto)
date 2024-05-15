@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!-- Esto es un boceto/placeholder. En los siguientes días lo modifico y personalizo acordemente -->
+
+
+<html>
+<body>
+
+      <footer>
+
+        <div class=”contenu-footer”>
+
+            <div class=”bloc footer-services”>
+              <h3>Nos services</h3>
+              <ul class=”liste-services”>
+                <li><a href=”#”>Création de sites web</a></li>
+                <li><a href=”#”>SEO</a></li>
+                <li><a href=”#”>SEA</a></li>
+              </ul>
+            </div>
+
+          <div class=”bloc footer-informations”>
+            <h3>A propos</h3>
+            <ul class=”liste-informations”>
+              <li><a href=”#”>Actualités</a></li>
+              <li><a href=”#”>Notre histoire</a></li>
+              <li><a href=”#”>Investisseurs</a></li>
+              <li><a href=”#”>Développement durable</a></li>
+            </ul>
+          </div>
+
+          <div class=”bloc footer-contact”>
+            <h3>Restons en contact</h3>
+            <p>06 06 06 06 06</p>
+            <p>supportclient@contact.com</p>
+            <p>12 rue de l'invention, Paris, 75011</p>
+          </div>
+
+        <p class="copyright">Company Name © 2022</p>
+
+ </div>
+
+  </footer>
+
+</body>
+</html>
