@@ -1,91 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../multimedia/fantapalooza16pxFavicon.png" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="/css/main-sign-in.css" />
+    <title>Fantapalooza</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../multimedia/fantapalooza16pxFavicon.png" />
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/nav.css">
-  <link rel="stylesheet" href="/css/main-sign-in.css">
-  <title>Fantapalooza</title>
-</head>
+  <body>
+    <header>
+      <div class="item-logo">
+        <h1>
+          <img
+            src="../multimedia/fantapalooza40px.png"
+            alt="logo fantapalooza"
+          />
+        </h1>
+      </div>
 
-<body>
-  <header>
-    <div class="item-logo">
-      <h1><img src="../multimedia/fantapalooza40px.png" alt="logo fantapalooza" /></h1>
-    </div>
+      <div class="info-evento">
+        <h2>28, 29 y 30 de Junio, 2024 <br />Campo Argentino de Polo</h2>
+      </div>
+    </header>
 
-    <div class="info-evento">
-      <h2>28, 29 y 30 de Junio, 2024 <br />Campo Argentino de Polo</h2>
-    </div>
-  </header>
+    <nav class="nav">
+      <ul>
+        <li class="nav-item 1"><a href="../index.html">INICIO</a></li>
+        <li class="nav-item 2"><a href="fp-merch.html">TIENDA</a></li>
+        <li class="nav-item 3"><a href="galeria.html">GALERÍA</a></li>
+        <li class="nav-item 4"><a href="line-up.html">LINE UP</a></li>
+        <li class="nav-item 5"><a href="nosotros.html">NOSOTROS</a></li>
+        <li class="nav-item 6"><a href="sign-in.html">INICIAR SESIÓN</a></li>
+      </ul>
+    </nav>
 
-  <nav class="nav">
-    <ul>
-      <li class="nav-item 1"><a href="../index.html">INICIO</a></li>
-      <li class="nav-item 2"><a href="fp-merch.html">FP MERCH</a></li>
-      <li class="nav-item 3"><a href="galeria.html">GALERÍA</a></li>
-      <li class="nav-item 4"><a href="line-up.html">LINEUP</a></li>
-      <li class="nav-item 5"><a href="nosotros.html">NOSOTROS</a></li>
-      <li class="nav-item 6"><a href="sign-in.html">SIGN IN</a></li>
-    </ul>
-  </nav>
+    <main>
+      <section>
+        <h2>Formulario de registro</h2>
+        <form action="">
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Ingrese su nombre aqui..."
+          />
+          <br />
+          <label for="apellido">Apellido:</label>
+          <input
+            type="text"
+            name="apellido"
+            id="apellido"
+            placeholder="Ingrese su apellido aqui..."
+          />
+          <br />
+          <label for="imagen">Imagen</label>
+          <input type="file" name="imagen" id="imagen" />
+          <br />
+          <label for="telefono">Telefono:</label>
+          <input
+            type="number"
+            name="telefono"
+            id="telefono"
+            placeholder="Ingrese su telefono aqui..."
+          />
+          <br />
+          <label for="fecha">Fecha de Nacimiento (mm/dd/yyyy):</label>
+          <input type="date" name="fecha" id="fecha" />
+          <br />
+          <label for="mail">Mail:</label>
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder="Ingrese su mail aqui..."
+          />
 
-  <main>
-    <section>
-      <h2>Formulario de registro</h2>
-      <form action="">  
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre aqui...">
-        <br>
-        <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido aqui...">
-        <br>
-        <label for="imagen">Imagen</label>
-        <input type="file" name="imagen" id="imagen">
-        <br>
-        <label for="telefono">Telefono:</label>
-        <input type="number" name="telefono" id="telefono" placeholder="Ingrese su telefono aqui...">
-        <br>
-        <label for="fecha">Fecha de Nacimiento (mm/dd/yyyy):</label>
-        <input type="date" name="fecha" id="fecha">
-        <br>
-        <label for="mail">Mail:</label>
-        <input type="email" name="mail" id="mail" placeholder="Ingrese su mail aqui...">
+          <p>
+            Género: <input type="radio" name="opcion" value="hombre" />Hombre
+            <input type="radio" name="opcion" value="mujer" />Mujer
+            <input type="radio" name="opcion" value="otro" />Otro
+          </p>
+          <p>
+            Festivales que conoce:
+            <input type="checkbox" name="check" value="Coachella" />Coachella
+            <input type="checkbox" name="check" value="EDC Las Vegas" />EDC Las
+            Vegas
+            <input
+              type="checkbox"
+              name="check"
+              value="Glastonbury"
+            />Glastonbury
+            <input
+              type="checkbox"
+              name="check"
+              value="Tomorrowland"
+            />Tomorrowland
+            <input type="checkbox" name="check" value="Wacken Open Air" />Wacken
+            Open Air <input type="checkbox" name="check" value="Sziget" />Sziget
+          </p>
 
-        <p>Género:
-          <input type="radio" name="opcion" value="hombre">Hombre
-          <input type="radio" name="opcion" value="mujer">Mujer
-          <input type="radio" name="opcion" value="otro">Otro
-        </p>
-        <p>Festivales que conoce:
-          <input type="checkbox" name="check" value="Coachella">Coachella
-          <input type="checkbox" name="check" value="EDC Las Vegas">EDC Las Vegas
-          <input type="checkbox" name="check" value="Glastonbury">Glastonbury
-          <input type="checkbox" name="check" value="Tomorrowland">Tomorrowland
-          <input type="checkbox" name="check" value="Wacken Open Air">Wacken Open Air
-          <input type="checkbox" name="check" value="Sziget">Sziget
-        </p>
+          <p>Subgénero de música preferido::</p>
+          <select name="estudios" id="estudios">
+            <option value="1">Hard rock</option>
+            <option value="2">Heavy metal</option>
+            <option value="3">Folk Rock</option>
+            <option value="4">Otro</option></select
+          ><br />
 
-        <p>Subgénero de música preferido::</p>
-        <select name="estudios" id="estudios">
-          <option value="1">Hard rock</option>
-          <option value="2">Heavy metal</option>
-          <option value="3">Folk Rock</option>
-          <option value="4">Otro</option>
-        </select><br>
+          <p>Comentarios:</p>
+          <textarea
+            name="comentarios"
+            id="comentarios"
+            cols="20"
+            rows="5"
+          ></textarea
+          ><br />
 
-        <p>Comentarios:</p>
-        <textarea name="comentarios" id="comentarios" cols="20" rows="5"></textarea><br>
-
-        <input type="submit" value="Enviar">
-      </form>
-
-    </section>
-  </main>
-
-</body>
-
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
