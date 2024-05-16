@@ -101,6 +101,12 @@ main > section {
     text-align: center;
     background-image: url(../multimedia/articulos-prueba.jpg);
 }
+
+.info-imagen1 {
+    width: 350px;
+    height: 200px;
+}
+
 .info-parrafo1 {
     grid-area: parrafo-info1;
     background-color: rgb(34, 4, 63);
@@ -111,6 +117,10 @@ main > section {
     background-color: black;
     text-align: center;
 }
+.info-imagen2 {
+    width: 350px;
+    height: 200px;
+}
 .info-parrafo2 {
     grid-area: parrafo-info2;
     background-color: rgb(3, 3, 73);
@@ -120,6 +130,10 @@ main > section {
     grid-area: foto-info3;
     background-color: black;
     text-align: center;
+}
+.info-imagen3 {
+    width: 350px;
+    height: 200px;
 }
 .info-parrafo3 {
     grid-area: parrafo-info3;
