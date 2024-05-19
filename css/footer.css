@@ -1,28 +1,3 @@
-body {
-  background: #f1f1f1;
-  font-family: Arial, Helvetica, sans-serif;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-h1 {
-  font-size: 10vw;
-  text-align: center;
-  margin-top: 20px;
-  color: #333;
-}
-
-.contenu {
-  /* grow shrink basis */
-  flex: 1 0 auto;
-}
-
-.contenu p {
-  padding: 5vw 10vw;
-  text-align: justify;
-}
-
 footer {
   flex-shrink: 0;
   border-top: 1px dashed #000;
@@ -35,8 +10,7 @@ footer {
 
 .contenu-footer {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-around;
   font-size: 20px;
   padding: 50px 0 100px;
   white-space: nowrap;
@@ -44,12 +18,11 @@ footer {
 }
 
 .bloc {
-  flex: 1 1 auto;
+  flex: 0 0 auto;
   margin: 0 30px;
   max-width: 25%; 
 }
 
-/* contact */
 .footer-services h3,
 .footer-informations h3,
 .footer-contact h3 {
@@ -60,8 +33,6 @@ footer {
 .footer-contact p {
   padding: 5px 0;
 }
-
-/* Services */
 
 .liste-services,
 .liste-information {
@@ -76,6 +47,7 @@ footer {
   text-decoration: none;
   color: #333;
 }
+
 .liste-services a:hover {
   color: rgb(3, 3, 3);
 }
