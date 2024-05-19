@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/main-index.css" />
     <link rel="stylesheet" href="css/buttons.css" />
+    <script src="js/usuario-en-sesion.js"></script>
     <title>Fantapalooza</title>
   </head>
   <body>
@@ -25,13 +26,20 @@
 
     <nav class="nav">
       <ul>
-        <li class="nav-item 1"><a href="index.html">INICIO</a></li>
-        <li class="nav-item 2"><a href="html/fp-merch.html">TIENDA</a></li>
-        <li class="nav-item 3"><a href="html/galeria.html">GALERÍA</a></li>
-        <li class="nav-item 4"><a href="html/line-up.html">LINE UP</a></li>
-        <li class="nav-item 5"><a href="html/nosotros.html">NOSOTROS</a></li>
-        <li class="nav-item 6">
-          <a href="html/sign-in.html">INICIAR SESIÓN</a>
+        <li id="nav-item-1"><a href="index.html">INICIO</a></li>
+        <li id="nav-item-2"><a href="html/fp-merch.html">TIENDA</a></li>
+        <li id="nav-item-3"><a href="html/galeria.html">GALERÍA</a></li>
+        <li id="nav-item-4"><a href="html/line-up.html">LINE UP</a></li>
+        <li id="nav-item-5"><a href="html/nosotros.html">NOSOTROS</a></li>
+        <li id="menu-iniciar-sesion"><a href="html/ingresar.html">INICIAR SESIÓN</a></li>
+        <li id="menu-desplegable"><a href="#" id="usuario-actual"></a>
+          <ul>
+            <li><p>Dinero: </p></li>
+            <li><button id="agregar-dinero" onclick="agregarDinero()">Agregar $</button></li>
+            <li><a href="html/itinirario.html">Itinirario</a></li>
+            <li><a href="html/datos-usuario.html">Mis Datos</a></li>
+            <li><button id="salir" onclick="eliminar_ls()">Salir</button></li>
+          </ul>
         </li>
       </ul>
     </nav>
@@ -67,7 +75,7 @@
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/w5ODkszYleo?si=bAEFJl70Jf96HlyF"
+          src="https://www.youtube.com/embed/3M__EnW4qd0?si=6Ox9DOXYNqBzz-ey"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -102,7 +110,11 @@
       </section>
 
       <article class="info-img1">
-        <img class="info-imagen1" src="./multimedia/index1.jpeg" alt="imagen index1" />
+        <img
+          class="info-imagen1"
+          src="./multimedia/index1.jpeg"
+          alt="imagen index1"
+        />
       </article>
       <article class="info-parrafo1">
         <h3>LA MÚSICA ESTÁ EN NUESTRO ADN</h3>
@@ -114,7 +126,11 @@
       </article>
 
       <article class="info-img2">
-        <img class="info-imagen2" src="./multimedia/index2.jpeg" alt="imagen index2" />
+        <img
+          class="info-imagen2"
+          src="./multimedia/index2.jpeg"
+          alt="imagen index2"
+        />
       </article>
       <article class="info-parrafo2">
         <h3>MERCADO GASTRONÓMICO</h3>
@@ -126,7 +142,11 @@
       </article>
 
       <article class="info-img3">
-        <img class="info-imagen3" src="./multimedia/index3.jpeg" alt="imagen index3" />
+        <img
+          class="info-imagen3"
+          src="./multimedia/index3.jpeg"
+          alt="imagen index3"
+        />
       </article>
       <article class="info-parrafo3">
         <h3>ESPÍRITU VERDE</h3>
