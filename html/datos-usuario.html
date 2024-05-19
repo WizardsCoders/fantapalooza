@@ -50,7 +50,7 @@
     <main>
       <section>
         <h2>Formulario de registro</h2>
-        <form action="">
+        <form action="" id="formularioRegistro" onsubmit="return validarFormulario()">
           <label for="nombre">Nombre:</label>
           <input
             type="text"
@@ -67,8 +67,8 @@
             placeholder="Ingrese su apellido aqui..."
           />
           <br />
-          <label for="imagen">Imagen</label>
-          <input type="file" name="imagen" id="imagen" />
+          <label for="imagen">Imagen:</label>
+          <input type="file" name="imagen" id="imagen" accept="image/*"/>
           <br />
           <label for="telefono">Telefono:</label>
           <input
@@ -113,7 +113,7 @@
             Open Air <input type="checkbox" name="check" value="Sziget" />Sziget
           </p>
 
-          <p>Subgénero de música preferido::</p>
+          <p>Subgénero de música preferido:</p>
           <select name="estudios" id="estudios">
             <option value="1">Hard rock</option>
             <option value="2">Heavy metal</option>
@@ -130,9 +130,10 @@
           ></textarea
           ><br />
 
-          <input type="submit" value="Enviar" />
+          <input type="submit" value="Enviar" onclick="enviarFormulario()"/>
         </form>
       </section>
+      <script src="../js/validacion-formulario.js"></script>
     </main>
   </body>
 </html>
