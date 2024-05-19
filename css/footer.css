@@ -11,17 +11,19 @@ footer {
 .contenu-footer {
   display: flex;
   justify-content: space-around;
+  align-items: center; 
   font-size: 20px;
   padding: 50px 0 100px;
-  white-space: nowrap;
-  overflow-x: auto; 
+  white-space: nowrap; 
+  overflow-x: auto;
 }
 
 .bloc {
-  flex: 0 0 auto;
+  flex: 1 1 auto;
   margin: 0 30px;
   max-width: 25%; 
 }
+
 
 .footer-services h3,
 .footer-informations h3,
