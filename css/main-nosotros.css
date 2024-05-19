@@ -1,30 +1,35 @@
 main{
     display: grid;
-    gap: 2px;
+    gap: 1px;
     margin-top: 2px;
+    background-color:  rgb(34, 4, 63);
     grid-template-areas: 
-                    'presentacion-nahuel presentacion-nicolas'
-                    'presentacion-johana presentacion-facundo';
+                    'presentacion-agustin presentacion-agustin presentacion-nicolas presentacion-nicolas'
+                    'presentacion-noelia presentacion-noelia presentacion-nahuel presentacion-nahuel'
+                    '. presentacion-facundo presentacion-facundo .';
 }
 
 .presentacion {
-    padding: 20px;
+    padding: 15px;
+    margin: 10px;
     text-align: center;
     background-color: rgb(1, 43, 1);
 }
 
+.presentacion-agustin {
+    grid-area: presentacion-agustin;
+}
+
 .presentacion-nahuel{
-    grid-area: presentacion-nahuel;
-    
+    grid-area: presentacion-nahuel; 
 }
 
 .presentacion-nicolas{
     grid-area: presentacion-nicolas;
-    
 }
 
-.presentacion-johana{
-    grid-area: presentacion-johana;
+.presentacion-noelia{
+    grid-area: presentacion-noelia;
 }
 
 .presentacion-facundo{

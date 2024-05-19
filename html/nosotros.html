@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/nav.css" />
     <link rel="stylesheet" href="../css/main-nosotros.css" />
+    <link rel="stylesheet" href="../css/buttons.css">
+    <script src="../js/usuario-en-sesion.js"></script>
     <title>Fantapalooza - Nosotros</title>
   </head>
   <body>
@@ -27,17 +29,26 @@
 
     <nav class="nav">
       <ul>
-        <li class="nav-item 1"><a href="../index.html">INICIO</a></li>
-        <li class="nav-item 2"><a href="fp-merch.html">TIENDA</a></li>
-        <li class="nav-item 3"><a href="galeria.html">GALERÍA</a></li>
-        <li class="nav-item 4"><a href="line-up.html">LINE UP</a></li>
-        <li class="nav-item 5"><a href="nosotros.html">NOSOTROS</a></li>
-        <li class="nav-item 6"><a href="sign-in.html">INICIAR SESIÓN</a></li>
+        <li id="nav-item-1"><a href="../index.html">INICIO</a></li>
+        <li id="nav-item-2"><a href="fp-merch.html">TIENDA</a></li>
+        <li id="nav-item-3"><a href="galeria.html">GALERÍA</a></li>
+        <li id="nav-item-4"><a href="line-up.html">LINE UP</a></li>
+        <li id="nav-item-5"><a href="nosotros.html">NOSOTROS</a></li>
+        <li id="menu-iniciar-sesion"><a href="ingresar.html">INICIAR SESIÓN</a></li>
+        <li id="menu-desplegable"><a href="#" id="usuario-actual"></a>
+          <ul>
+            <li><p>Dinero disponible: </p></li>
+            <li><button id="agregar-dinero" onclick="agregarDinero()">Agregar $</button></li>
+            <li><a href="itinirario.html">Itinirario</a></li>
+            <li><a href="datos-usuario.html">Mis Datos</a></li>
+            <li><button id="salir" onclick="eliminar_ls()">Salir</button></li>
+          </ul>
+        </li>
       </ul>
     </nav>
 
     <main class="main">
-      <article class="presentacion presentacion-nahuel">
+      <article class="presentacion presentacion-agustin">
         <img src="../multimedia/foto-agustin.png" alt="Foto Agustin" />
         <h2>Agustín Ammazzagatti</h2>
         <p>
@@ -66,9 +77,9 @@
         </p>
       </article>
 
-      <article class="presentacion presentacion-johana">
+      <article class="presentacion presentacion-noelia">
         <img src="../multimedia/perfil-prueba.jpg" alt="" />
-        <h2>Johana Díaz</h2>
+        <h2>Noelia Mendoza</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
           ullam Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -83,6 +94,20 @@
       <article class="presentacion presentacion-facundo">
         <img src="../multimedia/perfil-prueba.jpg" alt="prueba" />
         <h2>Facundo Leonel Paz</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
+          ullam Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Voluptas voluptate ratione quaerat tenetur eos in aspernatur, ad, esse
+          excepturi aut assumenda cumque vero laudantium quibusdam? Quasi
+          voluptas, modi aliquid est, officia ut nesciunt laborum harum cumque
+          saepe ratione soluta deserunt odio inventore totam quo ducimus
+          reiciendis deleniti nam sit sunt?
+        </p>
+      </article>
+
+      <article class="presentacion presentacion-nahuel">
+        <img src="../multimedia/perfil-prueba.jpg" alt="prueba" />
+        <h2>Nahuel Alejandro Garcia</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
           ullam Lorem ipsum dolor sit amet consectetur adipisicing elit.
