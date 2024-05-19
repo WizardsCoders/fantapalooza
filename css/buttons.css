@@ -9,6 +9,33 @@ button {
     margin-top: 20px;
 }
 
+#salir, #agregar-dinero{
+    font-size: 1rem;
+    letter-spacing: 0;
+    font-weight: 600;
+    margin: 0;
+    border: none;
+    background-color: lightskyblue;
+    text-decoration: underline;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(44, 3, 83);
+    transition: 1s;
+}
+
+#salir:hover, #agregar-dinero:hover {
+    background-color: rgb(48, 153, 185);
+    color: rgb(5, 85, 5);
+    transition: 1s;
+}
+
+#agregar-dinero {
+    font-weight: 500;
+    text-decoration: none;
+    width: 100px;
+}
+
 #comprar-dia1 {
     background-color: rgb(61, 10, 109);
     color: rgb(187, 154, 218);
