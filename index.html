@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/main-index.css" />
     <link rel="stylesheet" href="css/buttons.css" />
-    <script src="js/usuario-en-sesion.js"></script>
+    
     <title>Fantapalooza</title>
   </head>
   <body>
@@ -34,8 +34,9 @@
         <li id="menu-iniciar-sesion"><a href="html/ingresar.html">INICIAR SESIÓN</a></li>
         <li id="menu-desplegable"><a href="#" id="usuario-actual"></a>
           <ul>
-            <li><p>Dinero: </p></li>
+            <li><p id="dinero-actual"></p></li>
             <li><button id="agregar-dinero" onclick="agregarDinero()">Agregar $</button></li>
+            <li><button id="retirar-dinero" onclick="retirarDinero()">Retirar $</button></li>
             <li><a href="html/itinirario.html">Itinirario</a></li>
             <li><a href="html/datos-usuario.html">Mis Datos</a></li>
             <li><button id="salir" onclick="eliminar_ls()">Salir</button></li>
@@ -161,5 +162,6 @@
       <iframe src="html/footer.html" frameborder="0" width="100%" height="200">
       </iframe>
     </footer>
+    <script src="js/usuario-en-sesion.js"></script>
   </body>
 </html>

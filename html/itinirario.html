@@ -36,7 +36,9 @@
           <li id="menu-iniciar-sesion"><a href="ingresar.html">INICIAR SESIÓN</a></li>
           <li id="menu-desplegable"><a href="#" id="usuario-actual"></a>
             <ul>
-              <li><p>Dinero disponible: </p></li>
+              <li><p id="dinero-actual"></p></li>
+              <li><button id="agregar-dinero" onclick="agregarDinero()">Agregar $</button></li>
+              <li><button id="retirar-dinero" onclick="retirarDinero()">Retirar $</button></li>
               <li><a href="itinirario.html">Itinirario</a></li>
               <li><a href="datos-usuario.html">Mis Datos</a></li>
               <li><button onclick="eliminar_ls()">Salir</button></li>
