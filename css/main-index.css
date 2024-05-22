@@ -91,6 +91,38 @@ main > section {
     text-align: center;
     padding: 30px;
 }
+
+h3 {
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+    color: rgb(165, 131, 131);
+}
+
+#precio-pack{
+    font-size: 1.8rem;
+    color: rgb(55, 105, 138);
+}
+
+#info-flayer-dia-1 {
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+    font-family: "Cinzel", serif;
+    color: rgb(187, 154, 218);
+}
+
+#info-flayer-dia-2 {
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+    font-family: "Raleway", sans-serif;
+    color:rgb(140, 140, 231);
+}
+
+#info-flayer-dia-3 {
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+    font-family: "Sedgwick Ave Display", cursive;
+    color:rgb(111, 187, 111);
+}
 /* final seccion flayers*/
 
 /*seccion articulos informativos*/
