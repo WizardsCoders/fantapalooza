@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {   // Creo un evento 
        // Sincronizo el local storage al dinero del usuario
       document.getElementById("menu-iniciar-sesion").style.display = "none";   //Desactivo el campo "iniciar sesion"
       document.getElementById("menu-desplegable").style.display = "inline";   // Activo el menú para usuario en sesión
-      document.getElementById("usuario-actual").textContent = usuario.nombreUsuario.toUpperCase() + " +";   // Inyecto el nombre de usuario
+      document.getElementById("usuario-actual").textContent = usuario.nombreUsuario.toUpperCase() + " ▼";   // Inyecto el nombre de usuario
       document.getElementById("dinero-actual").textContent = `Dinero: $${usuario.dinero}` 
     }
   });

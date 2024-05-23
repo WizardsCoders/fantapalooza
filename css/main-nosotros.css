@@ -64,3 +64,13 @@ article > p {
     color: rgb(1, 43, 1);
     border-radius: 20px;
 }
+
+.contenedor-redes {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 20px;
+    border: aquamarine solid 3px;
+    background-color:rgb(250, 250, 250);
+    border-radius: 20px;
+}

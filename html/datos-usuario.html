@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/main-sign-in.css" />
     <link rel="stylesheet" href="../css/buttons.css">
     <script src="../js/usuario-en-sesion.js"></script>
+    <script src="https://kit.fontawesome.com/869045750e.js" crossorigin="anonymous"></script>
     <title>Fantapalooza - Datos del Usuario</title>
   </head>
 
@@ -36,14 +37,14 @@
         <li id="nav-item-4"><a href="line-up.html">LINE UP</a></li>
         <li id="nav-item-5"><a href="nosotros.html">NOSOTROS</a></li>
         <li id="menu-iniciar-sesion"><a href="ingresar.html">INICIAR SESIÓN</a></li>
-        <li id="menu-desplegable"><a href="#" id="usuario-actual"></a>
+        <li id="menu-desplegable"><i class="fa-solid fa-user"></i><a href="#" id="usuario-actual"></a>
           <ul>
             <li><p id="dinero-actual"></p></li>
             <li><button id="agregar-dinero" onclick="agregarDinero()">Agregar $</button></li>
             <li><button id="retirar-dinero" onclick="retirarDinero()">Retirar $</button></li>
             <li><a href="itinirario.html">Itinirario</a></li>
             <li><a href="datos-usuario.html">Mis Datos</a></li>
-            <li><button id="salir" onclick="eliminar_ls()">Salir</button></li>
+            <li><button id="salir" onclick="eliminar_ls()">Salir</button><i class="fa-solid fa-right-to-bracket"></i></li>
           </ul>
         </li>
       </ul>
