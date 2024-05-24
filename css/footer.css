@@ -1,77 +1,77 @@
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 footer {
-    flex-shrink: 0;
-    border-top: 1px dashed #000;
-    width: 100%;
-    background-color: #000000;
-    color: #ffffff;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding: 20px 0;
+  flex-shrink: 0;
+  border-top: 1px dashed #000;
+  width: 100%;
+  background-color: rgb(44, 3, 83);
+  color: #ffffff;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 20px 0;
 }
 
 .content-footer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    font-size: 20px;
-    padding: 50px 0 100px;
-    color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  font-size: 20px;
+  padding: 50px 0 100px;
+  color: #ffffff;
 }
 
 .bloc {
-    flex: 1 1 30%;
-    margin: 0 10px;
-    max-width: 30%;
+  flex: 1 1 30%;
+  margin: 0 10px;
+  max-width: 30%;
 }
 
 .footer-services h3,
 .footer-information h3,
 .footer-contact h3 {
-    font-size: 25px;
-    padding-bottom: 20px;
-    color: #ffffff;
+  font-size: 25px;
+  padding-bottom: 20px;
+  color: #ffffff;
 }
 
 .footer-contact p {
-    padding: 5px 0;
-    color: #ffffff;
+  padding: 5px 0;
+  color: #ffffff;
 }
 
 .list-services,
 .list-information,
 .list-social {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    color: #ffffff;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
 }
 
-    .list-services li,
-    .list-information li,
-    .list-social li {
-        padding: 2px 0;
-    }
+.list-services li,
+.list-information li,
+.list-social li {
+  padding: 2px 0;
+}
 
-    .list-services a,
-    .list-information a,
-    .list-social a {
-        text-decoration: none;
-        color: #ffffff;
-    }
+.list-services a,
+.list-information a,
+.list-social a {
+  text-decoration: none;
+  color: #ffffff;
+}
 
-        .list-services a:hover,
-        .list-information a:hover,
-        .list-social a:hover {
-            color: rgb(3, 3, 3);
-        }
+.list-services a:hover,
+.list-information a:hover,
+.list-social a:hover {
+  color: #ffffff64;
+}
 
 .copyright {
-    text-align: center;
-    padding-top: 20px;
-    color: #ffffff;
+  text-align: center;
+  padding-top: 20px;
+  color: #ffffff;
 }

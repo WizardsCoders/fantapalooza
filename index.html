@@ -8,60 +8,89 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/main-index.css" />
     <link rel="stylesheet" href="css/buttons.css" />
-    <script src="https://kit.fontawesome.com/869045750e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/869045750e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
     <title>Fantapalooza</title>
   </head>
   <body>
     <header>
-      <div class="item-logo">
-        <h1>
-          <img src="multimedia/fantapalooza40px.png" alt="logo fantapalooza" />
-        </h1>
-      </div>
+      <a href="/" class="logo">Fanta<span>palooza</span></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
 
-      <div class="info-evento">
-        <h2>28, 29 y 30 de Junio, 2024 <br />Campo Argentino de Polo</h2>
-      </div>
+      <ul class="navbar">
+        <li><a href="/">INICIO</a></li>
+        <li><a href="html/fp-merch.html">TIENDA</a></li>
+        <li><a href="html/galeria.html">GALERIA</a></li>
+        <li><a href="html/line-up.html">LINE UP</a></li>
+        <li><a href="html/nosotros.html">NOSOTROS</a></li>
+        <li><a href="html/ingresar.html">INICIAR SESION</a></li>
+      </ul>
     </header>
 
-    <nav class="nav">
+    <!--     <nav class="nav">
       <ul>
         <li id="nav-item-1"><a href="index.html">INICIO</a></li>
         <li id="nav-item-2"><a href="html/fp-merch.html">TIENDA</a></li>
         <li id="nav-item-3"><a href="html/galeria.html">GALERÍA</a></li>
         <li id="nav-item-4"><a href="html/line-up.html">LINE UP</a></li>
         <li id="nav-item-5"><a href="html/nosotros.html">NOSOTROS</a></li>
-        <li id="menu-iniciar-sesion"><a href="html/ingresar.html">INICIAR SESIÓN</a></li>
-        <li id="menu-desplegable"><i class="fa-solid fa-user"></i><a href="#" id="usuario-actual"></a>
+        <li id="menu-iniciar-sesion">
+          <a href="html/ingresar.html">INICIAR SESIÓN</a>
+        </li>
+        <li id="menu-desplegable">
+          <i class="fa-solid fa-user"></i><a href="#" id="usuario-actual"></a>
           <ul>
             <li><p id="dinero-actual"></p></li>
-            <li><button id="agregar-dinero" onclick="agregarDinero()">Agregar $</button></li>
-            <li><button id="retirar-dinero" onclick="retirarDinero()">Retirar $</button></li>
+            <li>
+              <button id="agregar-dinero" onclick="agregarDinero()">
+                Agregar $
+              </button>
+            </li>
+            <li>
+              <button id="retirar-dinero" onclick="retirarDinero()">
+                Retirar $
+              </button>
+            </li>
             <li><a href="html/itinirario.html">Itinirario</a></li>
             <li><a href="html/datos-usuario.html">Mis Datos</a></li>
-            <li><button id="salir" onclick="eliminar_ls()">Salir</button><i class="fa-solid fa-right-to-bracket"></i></li>
+            <li>
+              <button id="salir" onclick="eliminar_ls()">Salir</button
+              ><i class="fa-solid fa-right-to-bracket"></i>
+            </li>
           </ul>
         </li>
       </ul>
-    </nav>
+    </nav> -->
 
-    <main class="main">
+    <main class="main header">
       <section class="flayer-dia-1">
-        <h3 id="info-flayer-dia-1">Conseguilas a tan solo <br>$<span id="precio-dia-1">30.000</span></h3>
+        <h3 id="info-flayer-dia-1">
+          Conseguilas a tan solo <br />$<span id="precio-dia-1">30.000</span>
+        </h3>
         <img src="multimedia/flayer-wizards.png" alt="flayer-día-1-wizards" />
         <button id="comprar-dia1">
           comprar ticket <br /><span class="wizard">wizards</span>
         </button>
       </section>
       <section class="flayer-dia-2">
-        <h3 id="info-flayer-dia-2">Conseguilas a tan solo <br>$<span id="precio-dia-2">35.000</span></h3>
+        <h3 id="info-flayer-dia-2">
+          Conseguilas a tan solo <br />$<span id="precio-dia-2">35.000</span>
+        </h3>
         <img src="multimedia/flayer-warriors.png" alt="flayer-día-2-warriors" />
         <button id="comprar-dia2">
           comprar ticket <br /><span class="warrior">warriors</span>
         </button>
       </section>
       <section class="flayer-dia-3">
-        <h3 id="info-flayer-dia-3">Conseguilas a tan solo <br>$<span id="precio-dia-3">40.000</span></h3>
+        <h3 id="info-flayer-dia-3">
+          Conseguilas a tan solo <br />$<span id="precio-dia-3">40.000</span>
+        </h3>
         <img src="multimedia/flayer-monsters.png" alt="flayer-día-3-monsters" />
         <button id="comprar-dia3">
           comprar ticket <br /><span class="monster">monsters</span>
@@ -69,7 +98,10 @@
       </section>
 
       <section class="item-pack">
-        <h3 id="info-pack">Llevaste este pack que incluye acceso a los 3 días por el increíble precio de <br>$<span id="precio-pack">90.000</span></h3>
+        <h3 id="info-pack">
+          Adquiere este paquete, que te ofrece acceso a los 3 días a un precio
+          increíble <br />$<span id="precio-pack">90.000</span>
+        </h3>
         <button id="comprar-pack">
           comprar pack <br /><span class="wizard">wiz</span
           ><span class="warrior">war</span><span class="monster">mon</span>
@@ -162,10 +194,11 @@
       </article>
     </main>
 
-     <footer class="footer">
-   <iframe src="html/footer.html" frameborder="0" width="100%" height="750"> 
-   </iframe>
- </footer>
+    <footer class="footer">
+      <iframe src="html/footer.html" frameborder="0" width="100%" height="750">
+      </iframe>
+    </footer>
+    <script src="js/main.js"></script>
     <script src="js/usuario-en-sesion.js"></script>
   </body>
 </html>

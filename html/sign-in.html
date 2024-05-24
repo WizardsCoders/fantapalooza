@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/nav.css" />
     <link rel="stylesheet" href="/css/main-sign-in.css" />
-    <link rel="stylesheet" href="../css/buttons.css" />
-    <script src="../js/usuario-en-sesion.js"></script>
-    <script
-      src="https://kit.fontawesome.com/869045750e.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Fantapalooza - Datos del Usuario</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+  />
+    <title>Fantapalooza</title>
   </head>
 
   <body>
@@ -34,47 +32,19 @@
 
     <nav class="nav">
       <ul>
-        <li id="nav-item-1"><a href="../index.html">INICIO</a></li>
-        <li id="nav-item-2"><a href="fp-merch.html">TIENDA</a></li>
-        <li id="nav-item-3"><a href="galeria.html">GALERÍA</a></li>
-        <li id="nav-item-4"><a href="line-up.html">LINE UP</a></li>
-        <li id="nav-item-5"><a href="nosotros.html">NOSOTROS</a></li>
-        <li id="menu-iniciar-sesion">
-          <a href="ingresar.html">INICIAR SESIÓN</a>
-        </li>
-        <li id="menu-desplegable">
-          <i class="fa-solid fa-user"></i><a href="#" id="usuario-actual"></a>
-          <ul>
-            <li><p id="dinero-actual"></p></li>
-            <li>
-              <button id="agregar-dinero" onclick="agregarDinero()">
-                Agregar $
-              </button>
-            </li>
-            <li>
-              <button id="retirar-dinero" onclick="retirarDinero()">
-                Retirar $
-              </button>
-            </li>
-            <li><a href="itinirario.html">Itinirario</a></li>
-            <li><a href="datos-usuario.html">Mis Datos</a></li>
-            <li>
-              <button id="salir" onclick="eliminar_ls()">Salir</button
-              ><i class="fa-solid fa-right-to-bracket"></i>
-            </li>
-          </ul>
-        </li>
+        <li class="nav-item 1"><a href="../index.html">INICIO</a></li>
+        <li class="nav-item 2"><a href="fp-merch.html">TIENDA</a></li>
+        <li class="nav-item 3"><a href="galeria.html">GALERÍA</a></li>
+        <li class="nav-item 4"><a href="line-up.html">LINE UP</a></li>
+        <li class="nav-item 5"><a href="nosotros.html">NOSOTROS</a></li>
+        <li class="nav-item 6"><a href="sign-in.html">INICIAR SESIÓN</a></li>
       </ul>
     </nav>
 
     <main>
       <section>
         <h2>Formulario de registro</h2>
-        <form
-          action=""
-          id="formularioRegistro"
-          onsubmit="return validarFormulario()"
-        >
+        <form action="">
           <label for="nombre">Nombre:</label>
           <input
             type="text"
@@ -91,8 +61,8 @@
             placeholder="Ingrese su apellido aqui..."
           />
           <br />
-          <label for="imagen">Imagen:</label>
-          <input type="file" name="imagen" id="imagen" accept="image/*" />
+          <label for="imagen">Imagen</label>
+          <input type="file" name="imagen" id="imagen" />
           <br />
           <label for="telefono">Telefono:</label>
           <input
@@ -137,7 +107,7 @@
             Open Air <input type="checkbox" name="check" value="Sziget" />Sziget
           </p>
 
-          <p>Subgénero de música preferido:</p>
+          <p>Subgénero de música preferido::</p>
           <select name="estudios" id="estudios">
             <option value="1">Hard rock</option>
             <option value="2">Heavy metal</option>
@@ -154,10 +124,9 @@
           ></textarea
           ><br />
 
-          <input type="submit" value="Enviar" onclick="enviarFormulario()" />
+          <input type="submit" value="Enviar" />
         </form>
       </section>
-      <script src="../js/validacion-formulario.js"></script>
     </main>
   </body>
 </html>
