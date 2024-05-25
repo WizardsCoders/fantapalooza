@@ -5,8 +5,7 @@ main{
     background-color:  rgb(34, 4, 63);
     grid-template-areas: 
                     'presentacion-agustin presentacion-agustin presentacion-nicolas presentacion-nicolas'
-                    'presentacion-noelia presentacion-noelia presentacion-nahuel presentacion-nahuel'
-                    '. presentacion-facundo presentacion-facundo .';
+                    'presentacion-nahuel presentacion-nahuel presentacion-facundo presentacion-facundo';
 }
 
 .presentacion {
@@ -26,10 +25,6 @@ main{
 
 .presentacion-nicolas{
     grid-area: presentacion-nicolas;
-}
-
-.presentacion-noelia{
-    grid-area: presentacion-noelia;
 }
 
 .presentacion-facundo{
@@ -73,4 +68,14 @@ article > p {
     border: aquamarine solid 3px;
     background-color:rgb(250, 250, 250);
     border-radius: 20px;
+}
+
+@media(max-width: 700px) {
+    main {
+        grid-template-areas: 
+                    'presentacion-agustin'
+                    'presentacion-nicolas'
+                    'presentacion-nahuel'
+                    'presentacion-facundo';
+    }
 }

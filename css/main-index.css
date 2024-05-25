@@ -14,23 +14,6 @@ main{
                 'foto-info3 parrafo-info3 parrafo-info3';
 }
 
-/*Main de 4 columnas pensar una forma de que quede bien quizá en el hueco vacío hacer un aside*/
-/*
-main{
-    display: grid;
-    gap: 3px;
-    margin: 3px 3px 3px 3px;
-    grid-template-areas: 
-                'flayer1 flayer2 flayer3 .'
-                'pack pack pack pack'
-                'youtube-wizard youtube-wizard youtube-warrior youtube-warrior'
-                'youtube-monster youtube-monster youtube-monster youtube-monster'
-                'foto-info1 parrafo-info1 parrafo-info1 parrafo-info1'
-                'parrafo-info2 parrafo-info2 parrafo-info2 foto-info2'
-                'foto-info3 parrafo-info3 parrafo-info3 parrafo-info3';
-}
-*/
-
 /*Seccion de flayers */
 
 .flayer-dia-1 {
@@ -182,3 +165,68 @@ main > article{
 /*Fin seccion articulos informativos*/
 
 /*fin main*/
+
+@media (max-width: 1130px) {
+    main {
+        grid-template-areas: 
+                'flayer1 flayer1 flayer2 flayer2'
+                'flayer3 flayer3 flayer3 flayer3'
+                'pack pack pack pack'
+                'youtube-wizard youtube-wizard youtube-wizard youtube-wizard'
+                'youtube-warrior youtube-warrior youtube-warrior youtube-warrior'
+                'youtube-monster youtube-monster youtube-monster youtube-monster'
+                'foto-info1 parrafo-info1 parrafo-info1 parrafo-info1'
+                'parrafo-info2 parrafo-info2 parrafo-info2 foto-info2 '
+                'foto-info3 parrafo-info3 parrafo-info3 parrafo-info3';
+    }
+
+    .flayer-dia-3 button {
+    font-size: 1rem;
+    padding: 10px 50px;
+    }
+
+    .flayer-dia-3 picture img {
+        width: 100vh;
+    }
+
+}
+
+@media (max-width: 800px) {
+    main {
+        grid-template-areas: 
+                'flayer1 flayer1'
+                'flayer2 flayer2'
+                'flayer3 flayer3'
+                'pack pack'
+                'youtube-wizard youtube-wizard'
+                'youtube-warrior youtube-warrior'
+                'youtube-monster youtube-monster'
+                'foto-info1 foto-info1'
+                'parrafo-info1 parrafo-info1'
+                'foto-info2 foto-info2'
+                'parrafo-info2 parrafo-info2'
+                'foto-info3 foto-info3'
+                'parrafo-info3 parrafo-info3';
+    }
+
+    .flayer-dia-1 button, .flayer-dia-2 button, .flayer-dia-3 button, .item-pack button {
+        font-size: 0.9rem;
+        padding: 10px 60px;
+        }
+    
+        .flayer-dia-1 picture img, .flayer-dia-2 picture img, .flayer-dia-3 picture img {
+            width: 80vh;
+        }
+
+        #info-pack {
+            font-size: 1rem;
+        }
+    
+        #comprar-pack {
+            margin: 0;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            padding: 0;
+        }
+
+}

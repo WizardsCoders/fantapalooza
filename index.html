@@ -33,65 +33,44 @@
       </ul>
     </header>
 
-    <!--     <nav class="nav">
-      <ul>
-        <li id="nav-item-1"><a href="index.html">INICIO</a></li>
-        <li id="nav-item-2"><a href="html/fp-merch.html">TIENDA</a></li>
-        <li id="nav-item-3"><a href="html/galeria.html">GALERÍA</a></li>
-        <li id="nav-item-4"><a href="html/line-up.html">LINE UP</a></li>
-        <li id="nav-item-5"><a href="html/nosotros.html">NOSOTROS</a></li>
-        <li id="menu-iniciar-sesion">
-          <a href="html/ingresar.html">INICIAR SESIÓN</a>
-        </li>
-        <li id="menu-desplegable">
-          <i class="fa-solid fa-user"></i><a href="#" id="usuario-actual"></a>
-          <ul>
-            <li><p id="dinero-actual"></p></li>
-            <li>
-              <button id="agregar-dinero" onclick="agregarDinero()">
-                Agregar $
-              </button>
-            </li>
-            <li>
-              <button id="retirar-dinero" onclick="retirarDinero()">
-                Retirar $
-              </button>
-            </li>
-            <li><a href="html/itinirario.html">Itinirario</a></li>
-            <li><a href="html/datos-usuario.html">Mis Datos</a></li>
-            <li>
-              <button id="salir" onclick="eliminar_ls()">Salir</button
-              ><i class="fa-solid fa-right-to-bracket"></i>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav> -->
-
     <main class="main header">
       <section class="flayer-dia-1">
         <h3 id="info-flayer-dia-1">
           Conseguilas a tan solo <br />$<span id="precio-dia-1">30.000</span>
         </h3>
-        <img src="multimedia/flayer-wizards.png" alt="flayer-día-1-wizards" />
+        <picture>
+          <source srcset="multimedia/flayer-wizards-horizontal.png" media="(max-width: 800px)">
+          <img src="multimedia/flayer-wizards.png" alt="flayer-día-1-wizards" />
+        </picture>
+        <br>
         <button id="comprar-dia1">
           comprar ticket <br /><span class="wizard">wizards</span>
         </button>
       </section>
+
       <section class="flayer-dia-2">
         <h3 id="info-flayer-dia-2">
           Conseguilas a tan solo <br />$<span id="precio-dia-2">35.000</span>
         </h3>
-        <img src="multimedia/flayer-warriors.png" alt="flayer-día-2-warriors" />
+        <picture>
+          <source srcset="multimedia/flayer-warriors-horizontal.png" media="(max-width: 800px)">
+          <img src="multimedia/flayer-warriors.png" alt="flayer-día-2-warriors" />
+        </picture>
+        <br>
         <button id="comprar-dia2">
           comprar ticket <br /><span class="warrior">warriors</span>
         </button>
       </section>
+
       <section class="flayer-dia-3">
         <h3 id="info-flayer-dia-3">
           Conseguilas a tan solo <br />$<span id="precio-dia-3">40.000</span>
         </h3>
-        <img src="multimedia/flayer-monsters.png" alt="flayer-día-3-monsters" />
+        <picture>
+          <source srcset="multimedia/flayer-monsters-horizontal.png" media="(max-width: 1130px)">
+          <img src="multimedia/flayer-monsters.png" alt="flayer-día-3-monsters"/>
+        </picture>
+        <br>
         <button id="comprar-dia3">
           comprar ticket <br /><span class="monster">monsters</span>
         </button>

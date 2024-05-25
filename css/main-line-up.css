@@ -24,3 +24,26 @@ main h2 {
     transition: 1s;
     border-radius: 6%;
 }
+
+@media (max-width: 800px) {
+    main {
+        padding: 5px;
+    }
+    
+    main h2 {
+        margin-bottom: 5px;
+        padding: 10px;
+        font-size: 1.8rem;
+    }
+
+    .line-up img {
+        margin-bottom: 10px;
+        width: 70vh;
+    }
+
+    .logo-blanco {
+        padding: 0;
+        margin: 0;
+        width: 30px;
+    }
+}
