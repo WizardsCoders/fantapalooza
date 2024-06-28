@@ -34,16 +34,17 @@ class Usuario:
             nombre VARCHAR(30) NOT NULL,
             apellido VARCHAR(30) NOT NULL,
             usuario VARCHAR(30) NOT NULL,
+            contrasenia VARCHAR(30) NOT NULL,
             imagen_url VARCHAR(255) )''')
         self.conn.commit()
 
         self.cursor.close()
         self.cursor = self.conn.cursor(dictionary=True)
 
-    def agregar_usuario(self, nombre, apellido, nombre_usuario, imagen):
+    def agregar_usuario(self, nombre, apellido, nombre_usuario, contrasenia, imagen):
 
-        sql = "INSERT INTO usuarios (nombre, apellido, usuario, imagen_url) VALUES (%s, %s, %s, %s)"
-        valores = (nombre, apellido, nombre_usuario, imagen)
+        sql = "INSERT INTO usuarios (nombre, apellido, usuario, contrasenia, imagen_url) VALUES (%s, %s, %s, %s, %s)"
+        valores = (nombre, apellido, nombre_usuario, contrasenia, imagen)
 
         self.cursor.execute(sql, valores)
         self.conn.commit()
@@ -55,9 +56,9 @@ class Usuario:
         return self.cursor.fetchone()
 
     #no tiene mucho sentido en nuestro caso pero bueno
-    def modificar_usuario(self, codigo, nuevo_nombre, nuevo_apellido, nuevo_nombre_usuario, nueva_imagen):
-        sql = "UPDATE usuarios SET nombre = %s, apellido = %s, usuario = %s, imagen_url = %s WHERE codigo = %s"
-        valores = (nuevo_nombre, nuevo_apellido, nuevo_nombre_usuario, nueva_imagen, codigo)
+    def modificar_usuario(self, codigo, nuevo_nombre, nuevo_apellido, nuevo_nombre_usuario, nueva_contrasenia, nueva_imagen):
+        sql = "UPDATE usuarios SET nombre = %s, apellido = %s, usuario = %s, contrasenia = %s, imagen_url = %s WHERE codigo = %s"
+        valores = (nuevo_nombre, nuevo_apellido, nuevo_nombre_usuario, nueva_contrasenia, nueva_imagen, codigo)
         self.cursor.execute(sql, valores)
         self.conn.commit()
         return self.cursor.rowcount > 0      
@@ -71,6 +72,7 @@ class Usuario:
             print(f"Nombre.....: {usuario['nombre']}")
             print(f"Apellido...: {usuario['apellido']}")
             print(f"Usuario....: {usuario['usuario']}")
+            print(f"Contrasenia: {usuario['contrasenia']}")
             print(f"Imagen.....: {usuario['imagen_url']}")        
             print("-" * 40)
         else:
@@ -117,6 +119,7 @@ def agregar_usuario():
     nombre = request.form['nombre']
     apellido = request.form['apellido']
     usuario = request.form['usuario']
+    contrasenia = request.form['contrasenia']
     imagen = request.files['imagen']
     nombre_imagen = ""
 
@@ -124,7 +127,7 @@ def agregar_usuario():
     nombre_imagen = secure_filename(imagen.filename)
     nombre_base, extension = os.path.splitext(nombre_imagen)
     nombre_imagen = f"{nombre_base}_{int(time.time())}{extension}"
-    nuevo_codigo = usuarios.agregar_usuario(nombre, apellido, usuario, nombre_imagen)
+    nuevo_codigo = usuarios.agregar_usuario(nombre, apellido, usuario, contrasenia, nombre_imagen)
 
     if nuevo_codigo:
         imagen.save(os.path.join(ruta_destino, nombre_imagen))
@@ -138,6 +141,7 @@ def modificar_usuario(codigo):
     nuevo_nombre = request.form.get("nombre")
     nuevo_apellido = request.form.get("apellido")
     nuevo_usuario = request.form.get("usuario")
+    nueva_contrasenia = request.form.get("contrasenia")
 
     # Verifica si se proporcionó una nueva imagen
     if 'imagen' in request.files:
@@ -168,7 +172,7 @@ def modificar_usuario(codigo):
 
     # Se llama al método modificar_usuario pasando el codigo del usuario y los nuevos datos.
     if usuarios.modificar_usuario(codigo, nuevo_nombre,
-    nuevo_apellido, nuevo_usuario, nombre_imagen):
+    nuevo_apellido, nuevo_usuario, nueva_contrasenia, nombre_imagen):
         return jsonify({"mensaje": "usuario modificado"}), 200
     else:
         return jsonify({"mensaje": "usuario no encontrado"}), 403
