@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../multimedia/fantapalooza16pxFavicon.png" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/nav.css" />
-    <link rel="stylesheet" href="/css/main-sign-in.css" />
-    <link rel="stylesheet" href="../css/buttons.css" />
-    <script src="../js/usuario-en-sesion.js"></script>
+    <link rel="icon" href="multimedia/fantapalooza16pxFavicon.png" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/main-sign-in.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <script src="js/usuario-en-sesion.js"></script>
     <script
       src="https://kit.fontawesome.com/869045750e.js"
       crossorigin="anonymous"
@@ -21,7 +21,7 @@
       <div class="item-logo">
         <h1>
           <img
-            src="../multimedia/fantapalooza40px.png"
+            src="multimedia/fantapalooza40px.png"
             alt="logo fantapalooza"
           />
         </h1>
@@ -34,7 +34,7 @@
 
     <nav class="nav">
       <ul>
-        <li id="nav-item-1"><a href="../index.html">INICIO</a></li>
+        <li id="nav-item-1"><a href="index.html">INICIO</a></li>
         <li id="nav-item-2"><a href="fp-merch.html">TIENDA</a></li>
         <li id="nav-item-3"><a href="galeria.html">GALERÍA</a></li>
         <li id="nav-item-4"><a href="line-up.html">LINE UP</a></li>
@@ -46,22 +46,9 @@
           <i class="fa-solid fa-user"></i><a href="#" id="usuario-actual"></a>
           <ul>
             <li><p id="dinero-actual"></p></li>
-            <li>
-              <button id="agregar-dinero" onclick="agregarDinero()">
-                Agregar $
-              </button>
-            </li>
-            <li>
-              <button id="retirar-dinero" onclick="retirarDinero()">
-                Retirar $
-              </button>
-            </li>
-            <li><a href="itinirario.html">Itinirario</a></li>
-            <li><a href="datos-usuario.html">Mis Datos</a></li>
-            <li>
-              <button id="salir" onclick="eliminar_ls()">Salir</button
-              ><i class="fa-solid fa-right-to-bracket"></i>
-            </li>
+            <li><button id="agregar-dinero" onclick="agregarDinero()">Agregar $</button></li>
+            <li><button id="retirar-dinero" onclick="retirarDinero()">Retirar $</button></li>
+            <li><button id="salir" onclick="eliminar_ls()">Salir</button><i class="fa-solid fa-right-to-bracket"></i></li>
           </ul>
         </li>
       </ul>
@@ -91,6 +78,20 @@
             placeholder="Ingrese su apellido aqui..."
           />
           <br />
+
+          <label for="nombre-usuario">Usuario:</label>
+          <input
+            type="text"
+            name="nombre-usuario"
+            id="nombre-usuario"
+            placeholder="Ingrese su nombre de usuario aqui..."
+          />
+          <br />
+
+          <label for="contraseña">Contraseña</label>
+          <input type="password" name="contraseña" id="contraseña" placeholder="Igrese su contraseña aqui...">
+          <br>
+
           <label for="imagen">Imagen:</label>
           <input type="file" name="imagen" id="imagen" accept="image/*" />
           <br />
@@ -157,7 +158,7 @@
           <input type="submit" value="Enviar" onclick="enviarFormulario()" />
         </form>
       </section>
-      <script src="../js/validacion-formulario.js"></script>
+      <script src="js/validacion-formulario.js"></script>
     </main>
   </body>
 </html>

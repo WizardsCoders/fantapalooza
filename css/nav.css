@@ -1,101 +1,120 @@
-/* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  scroll-padding-top: 2rem;
-  list-style: none;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-}
-:root {
-  --text-color: #000000;
-  --main-color: #942867;
-}
-section {
-  padding: 50px 10%;
-}
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 100px;
-  background: #edecea;
+/*Nav*/
+nav {
+    background-color: rgb(72, 170, 231);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
-/* Sección index.html */
-
-.logo {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--text-color);
-}
-.logo span {
-  color: var(--main-color);
-}
-.navbar {
-  position: relative;
-  display: flex;
-}
-.navbar a {
-  font-size: 1rem;
-  padding: 10px 20px;
-  font-weight: 500;
-  color: var(--text-color);
-}
-.navbar a:hover {
-  color: var(--main-color);
-}
-#menu-icon {
-  font-size: 2rem;
-  cursor: pointer;
-  display: none;
+.menu-hamburguesa {
+    display: none;
 }
 
-@media (max-width: 991px) {
-  header {
-    padding: 18px 4%;
-  }
-  section {
-    padding: 50px 4%;
-  }
+@media (max-width: 910px) {
+    #menu-desplegable {
+        flex-grow: 1;
+    }
+
+    nav ul li:nth-child(-n + 6) {
+        flex-shrink: 1;
+    }
 }
 
-@media (max-width: 768px) {
-  header {
-    padding: 11px 4%;
-  }
-  #menu-icon {
-    display: initial;
-  }
-  header .navbar {
-    position: absolute;
-    top: -500px;
-    left: 0;
-    right: 0;
+@media (max-width: 836px) {
+    .menu-hamburguesa {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(72, 170, 231);
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+
+    #abrir-menu {
+        border: none;
+        background: none;
+        margin: 20px;
+        height: 5%;
+    }
+    
+    .nav {
+        display: none;
+    }
+
+    .nav {
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+   
+}
+
+/*Navegador Entero*/
+nav ul {
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    background: #fff;
-    box-shadow: 0 4px 4px rgb(0 0 0 /10%);
-    transition: 0.2s ease;
-    text-align: center;
-  }
-  .navbar a {
-    padding: 1.5rem;
-    display: block;
-  }
-  .navbar.active {
-    top: 100%;
-  }
-  .navbar a:hover {
-    color: #fff;
-    background: var(--main-color);
-  }
+    justify-content: space-evenly;
+    padding: 10px;
 }
+
+/*Todos los li del navegador*/
+nav li {
+    padding: 10px;
+}
+
+/*Todos los anclas del navegador*/
+nav a {
+    text-decoration: none;
+    width: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    color: rgb(44, 3, 83);
+    transition: 1s;
+}
+
+/*Cuando pasas con el coursor encima de un elemento ancla*/
+nav a:hover {
+    background-color: rgb(48, 153, 185);
+    color: rgb(5, 85, 5);
+    transition: 1s;
+}
+
+#menu-iniciar-sesion{
+    width: 15%;
+}
+
+#menu-desplegable{
+    width: 22%;
+    display: none;
+}
+
+/*Todo el contenedor -> todas las listas -> Todos los elementos -> submenú*/
+nav ul li ul{
+    position: absolute;
+    margin-top: 15px;
+    width: 300px;
+    background-color: lightskyblue;
+    display: none;
+}
+
+#menu-desplegable ul li a {
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+/*Fin Nav*/

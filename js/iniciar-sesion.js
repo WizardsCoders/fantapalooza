@@ -6,7 +6,7 @@ formulario.addEventListener("submit", function (event) { // Queda a la espera de
     if (nombreUsuario && contraseña == "usuario") {   // Compruebo que se haya escrito algo en usuario y también que la contraseña que me llegue sea = a la palabra usuario
       localStorage.setItem("nombre-usuario", nombreUsuario)  //Guardo en el local storage lo que me haya llegado como nombre de usuario
       localStorage.setItem("dinero", "0")   // Agrego una llave valor en el local storage que represente el dinero inicial en $0
-      let url = "../index.html";      // Me guardo en una variable la ruta hacia el index
+      let url = "index.html";      // Me guardo en una variable la ruta hacia el index
       window.location.href = url;     // Redirecciono hacia el index
     } else {
       prompt("usuario y/o contraseña no válido");

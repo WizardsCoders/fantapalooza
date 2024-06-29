@@ -1,6 +1,8 @@
 function validarFormulario(){
     let nombre = document.getElementById("nombre").value;
     let apellido = document.getElementById("apellido").value;
+    let nombreUsuario = document.getElementById("nombre-usuario").value;
+    let contrasenia = document.getElementById("contraseña").value;
     var archivoInput = document.getElementById("imagen");
     var archivo = archivoInput.files[0];
     let telefono = document.getElementById("telefono").value;
@@ -17,6 +19,16 @@ function validarFormulario(){
 
     if(apellido == ""){
         alert("Ingrese su apellido")
+        return false;
+    }
+
+    if(nombreUsuario == ""){
+        alert("Ingrese su nombre de usuario")
+        return false;
+    }
+
+    if(contrasenia == ""){
+        alert("Ingrese su contraseña")
         return false;
     }
 

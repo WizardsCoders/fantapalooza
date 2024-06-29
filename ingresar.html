@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="multimedia/fantapalooza16pxFavicon.png" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/main-ingresar.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <title>Fantapalooza - Ingresar</title>
+  </head>
+  <body>
+    <header>
+      <div class="item-logo">
+        <h1>
+          <picture>
+            <source srcset="multimedia/fantapalooza35px.png" media="(max-width: 1100px)">
+            <img src="multimedia/fantapalooza40px.png" alt="logo fantapalooza" />
+          </picture>
+        </h1>
+      </div>
+  
+      <div class="info-evento">
+        <h2>28, 29 y 30 de Junio, 2024 <br />Campo Argentino de Polo</h2>
+      </div>
+    </header>
+  
+    <div class="menu-hamburguesa">
+      <img src="multimedia/fantapalooza30px.png" alt="logo fantapalooza" />
+      <button id="abrir-menu">&#9776;</button>
+    </div>
+  
+    <nav class="nav">
+      <ul>
+        <li id="nav-item-1"><a href="index.html">INICIO</a></li>
+        <li id="nav-item-2"><a href="fp-merch.html">TIENDA</a></li>
+        <li id="nav-item-3"><a href="galeria.html">GALERÍA</a></li>
+        <li id="nav-item-4"><a href="line-up.html">LINE UP</a></li>
+        <li id="nav-item-5"><a href="nosotros.html">NOSOTROS</a></li>
+        <li id="registro"><a href="datos-usuario.html">REGISTRARSE</a></li>
+      </ul>
+    </nav>
+
+    <main class="main header">
+      <h1>
+        <img
+          src="multimedia/fantapalooza-blanco.png"
+          alt="logo-fantapalooza-blanco"
+        />
+      </h1>
+      <h2>Formulario de Ingreso</h2>
+
+      <form id="formulario-ingresar">
+        <div class="item-form">
+          <label for="nombre-usuario">Nombre usuario</label>
+          <input
+            type="text"
+            placeholder="Ingresa un nombre de usuario"
+            id="nombre-usuario"
+          />
+        </div>
+
+        <div class="item-form">
+          <label for="contraseña">Contraseña</label>
+          <input
+            type="password"
+            placeholder="Ingresa la contraseña usuario"
+            id="contraseña"
+          />
+        </div>
+
+        <button type="submit">Iniciar sesión</button>
+      </form>
+    </main>
+    <footer></footer>
+    <script src="js/main.js"></script>
+    <script src="js/usuario-en-sesion.js"></script>
+    <script src="js/iniciar-sesion.js"></script>
+  </body>
+</html>

@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../multimedia/fantapalooza16pxFavicon.png" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/nav.css" />
-    <link rel="stylesheet" href="../css/main-fp-merch.css" />
-    <link rel="stylesheet" href="../css/buttons.css" />
-    <script src="../js/usuario-en-sesion.js"></script>
+    <link rel="icon" href="multimedia/fantapalooza16pxFavicon.png" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/main-fp-merch.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <script src="js/usuario-en-sesion.js"></script>
     <script
       src="https://kit.fontawesome.com/869045750e.js"
       crossorigin="anonymous"
@@ -21,61 +21,51 @@
   </head>
   <body>
     <header>
-      <a href="/" class="logo">Fanta<span>palooza</span></a>
-      <div class="bx bx-menu" id="menu-icon"></div>
-
-      <ul class="navbar">
-        <li><a href="/">INICIO</a></li>
-        <li><a href="/html/fp-merch.html">TIENDA</a></li>
-        <li><a href="/html/galeria.html">GALERIA</a></li>
-        <li><a href="/html/line-up.html">LINE UP</a></li>
-        <li><a href="/html/nosotros.html">NOSOTROS</a></li>
-        <li><a href="/html/ingresar.html">INICIAR SESION</a></li>
-      </ul>
-    </header>
-
-    <!-- <header>
       <div class="item-logo">
         <h1>
-          <img
-            src="../multimedia/fantapalooza40px.png"
-            alt="logo fantapalooza"
-          />
+          <picture>
+            <source srcset="multimedia/fantapalooza35px.png" media="(max-width: 1100px)">
+            <img src="multimedia/fantapalooza40px.png" alt="logo fantapalooza" />
+          </picture>
         </h1>
       </div>
-
+  
       <div class="info-evento">
         <h2>28, 29 y 30 de Junio, 2024 <br />Campo Argentino de Polo</h2>
       </div>
     </header>
-
+  
+    <div class="menu-hamburguesa">
+      <img src="multimedia/fantapalooza30px.png" alt="logo fantapalooza" />
+      <button id="abrir-menu">&#9776;</button>
+    </div>
+  
     <nav class="nav">
       <ul>
-        <li id="nav-item-1"><a href="../index.html">INICIO</a></li>
+        <li id="nav-item-1"><a href="index.html">INICIO</a></li>
         <li id="nav-item-2"><a href="fp-merch.html">TIENDA</a></li>
         <li id="nav-item-3"><a href="galeria.html">GALERÍA</a></li>
         <li id="nav-item-4"><a href="line-up.html">LINE UP</a></li>
         <li id="nav-item-5"><a href="nosotros.html">NOSOTROS</a></li>
-        <li id="menu-iniciar-sesion"><a href="ingresar.html">INICIAR SESIÓN</a></li>
-        <li id="menu-desplegable"><i class="fa-solid fa-user"></i><a href="#" id="usuario-actual"></a>
+        <li id="registro"><a href="datos-usuario.html">REGISTRARSE</a></li>
+        <li id="menu-iniciar-sesion"><a href="ingresar.html">INGRESAR</a></li>
+        <li id="menu-desplegable"><a href="#" id="usuario-actual"></a>
           <ul>
             <li><p id="dinero-actual"></p></li>
             <li><button id="agregar-dinero" onclick="agregarDinero()">Agregar $</button></li>
             <li><button id="retirar-dinero" onclick="retirarDinero()">Retirar $</button></li>
-            <li><a href="itinirario.html">Itinirario</a></li>
-            <li><a href="datos-usuario.html">Mis Datos</a></li>
             <li><button id="salir" onclick="eliminar_ls()">Salir</button><i class="fa-solid fa-right-to-bracket"></i></li>
           </ul>
         </li>
       </ul>
-    </nav> -->
+    </nav>
 
     <main class="header">
       <div class="wrap">
         <div class="galeria">
           <div>
             <img
-              src="../multimedia/1.jpg"
+              src="multimedia/1.jpg"
               class="imagen elemento1"
               alt="Imagen Producto"
             />
@@ -87,7 +77,7 @@
           </div>
           <div>
             <img
-              src="../multimedia/2.jpg"
+              src="multimedia/2.jpg"
               class="imagen elemento2"
               alt="Imagen Producto"
             />
@@ -99,7 +89,7 @@
           </div>
           <div>
             <img
-              src="../multimedia/3.jpg"
+              src="multimedia/3.jpg"
               class="imagen elemento3"
               alt="Imagen Producto"
             />
@@ -111,7 +101,7 @@
           </div>
           <div>
             <img
-              src="../multimedia/4.jpg"
+              src="multimedia/4.jpg"
               class="imagen elemento4"
               alt="Imagen Producto"
             />
@@ -123,7 +113,7 @@
           </div>
           <div>
             <img
-              src="../multimedia/5.jpg"
+              src="multimedia/5.jpg"
               class="imagen elemento5"
               alt="Imagen Producto"
             />
@@ -135,7 +125,7 @@
           </div>
           <div>
             <img
-              src="../multimedia/6.jpg"
+              src="multimedia/6.jpg"
               class="imagen elemento6"
               alt="Imagen Producto"
             />
@@ -147,7 +137,7 @@
           </div>
           <div>
             <img
-              src="../multimedia/7.jpg"
+              src="multimedia/7.jpg"
               class="imagen elemento7"
               alt="Imagen Producto"
             />
@@ -159,7 +149,7 @@
           </div>
           <div>
             <img
-              src="../multimedia/8.jpg"
+              src="multimedia/8.jpg"
               class="imagen elemento8"
               alt="Imagen Producto"
             />
@@ -172,7 +162,7 @@
         </div>
       </div>
     </main>
-    <script src="../js/main.js"></script>
-    <script src="../js/usuario-en-sesion.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/usuario-en-sesion.js"></script>
   </body>
 </html>
