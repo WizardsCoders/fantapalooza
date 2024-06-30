@@ -1,4 +1,4 @@
-const URL = "http://127.0.0.1:5000/"
+const URL = "https://nakisey.pythonanywhere.com/"
 // Obtiene el contenido del inventario
 function obtenerUsuarios() {
     fetch(URL + 'usuarios') // Realiza una solicitud GET al servidor y obtiene la lista de Usuarios.

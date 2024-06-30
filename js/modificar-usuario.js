@@ -1,4 +1,4 @@
-const URL = "http://127.0.0.1:5000/"
+const URL = "https://nakisey.pythonanywhere.com/"
 // Al subir al servidor, deberá utilizarse la siguiente ruta.
 //USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
 //const URL = "https://USUARIO.pythonanywhere.com/"
@@ -59,7 +59,7 @@ function mostrarFormulario() {
         const imagenActual = document.getElementById('imagen-actual');
 
         if (imagen_url && !imagenSeleccionada) { // Verifica si imagen_url no está vacía y no se ha seleccionado una imagen
-            imagenActual.src = './static/imagenes/' + imagen_url;
+            imagenActual.src = 'https://www.pythonanywhere.com/user/nakisey/files/home/nakisey/mysite/static/imagenes/' + imagen_url;
 
             //Al subir al servidor, deberá utilizarse la siguiente ruta. 
             //USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere

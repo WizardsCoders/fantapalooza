@@ -1,4 +1,4 @@
-const URL = "http://127.0.0.1:5000/"
+const URL = "https://nakisey.pythonanywhere.com/"
 // Al subir al servidor, deberá utilizarse la siguiente ruta.
 //USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
 //const URL = "https://USUARIO.pythonanywhere.com/"
@@ -33,7 +33,7 @@ fetch(URL + 'usuarios')
             '<td>' + usuario.contrasenia + '</td>' +
 
             // Mostrar miniatura de la imagen (probar ruta)
-            '<td><img src=/multimedia/' + usuario.imagen_url +' alt="Imagen del usuario" width="80" height="80"></td>';
+            '<td><img src=https://www.pythonanywhere.com/user/nakisey/files/home/nakisey/mysite/static/imagenes/' + usuario.imagen_url +' alt="Imagen del usuario" style="width: 100px;"></td>';
             //Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
             //'<td><img src=https://www.pythonanywhere.com/user/USUARIO/files/home/USUARIO/mysite/static/imagenes/' + usuario.imagen_url +' alt="Imagen del usuario" style="width: 100px;"></td>';
 
