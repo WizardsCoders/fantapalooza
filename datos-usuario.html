@@ -6,7 +6,7 @@
     <link rel="icon" href="multimedia/fantapalooza16pxFavicon.png" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/main-sign-in.css" />
+    <link rel="stylesheet" href="css/main-formulario-usuarios.css" />
     <link rel="stylesheet" href="css/buttons.css" />
     <script src="js/usuario-en-sesion.js"></script>
     <script
@@ -57,6 +57,13 @@
 
     <main>
       <section>
+        <h2>
+          <img
+            src="multimedia/fantapalooza-blanco.png"
+            alt="logo-fantapalooza-blanco"
+          />
+        </h2>
+
         <h2>Formulario de registro</h2>
         <!-- <form
           action=""
@@ -64,43 +71,37 @@
           enctype="multipart/form-data"
           onsubmit="return validarFormulario()"
         > -->
-        <form
-          id="formulario"
-          enctype="multipart/form-data"
-        >
+        <form id="formulario" enctype="multipart/form-data">
+
+        <div class="item-form">
           <label for="nombre">Nombre:</label>
-          <input
-            type="text"
-            name="nombre"
-            id="nombre"
-            placeholder="Ingrese su nombre aqui..."
-          />
+          <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre aqui..."/>
           <br />
+        </div>
+
+        <div class="item-form">
           <label for="apellido">Apellido:</label>
-          <input
-            type="text"
-            name="apellido"
-            id="apellido"
-            placeholder="Ingrese su apellido aqui..."
-          />
+          <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido aqui..."/>
           <br />
+        </div>
 
+        <div class="item-form">
           <label for="usuario">Usuario:</label>
-          <input
-            type="text"
-            name="usuario"
-            id="usuario"
-            placeholder="Ingrese su nombre de usuario aqui..."
-          />
+          <input type="text" name="usuario" id="usuario" placeholder="Ingrese su nombre de usuario aqui..."/>
           <br />
+        </div>
 
+        <div class="item-form">
           <label for="contrasenia">Contraseña:</label>
           <input type="password" name="contrasenia" id="contrasenia" placeholder="Ingrese su contraseña aqui...">
           <br>
+        </div>
 
+        <div class="item-form">
           <label for="imagenUsuario">Imagen:</label>
           <input type="file" name="imagenUsuario" id="imagenUsuario" accept="image/*" />
           <br />
+        </div> 
           <!-- <label for="telefono">Telefono:</label>
           <input
             type="number"
@@ -163,7 +164,7 @@
 
           <!-- <input type="submit" value="Enviar" onclick="enviarFormulario()" /> -->
           <button type="submit">Agregar Usuario</button>
-          <a href="index.html">Menu principal</a>
+          <button><a href="index.html">Menu principal</a></button>
         </form>
       </section>
       <script src="js/validacion-formulario.js"></script>

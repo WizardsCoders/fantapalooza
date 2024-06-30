@@ -2,8 +2,7 @@ main {
     background-color: rgb(29, 3, 16);
     color: aliceblue;
     width: 80%;
-    margin: 0px auto;
-    margin-top: 35px;
+    margin: 35px auto;
     padding: 20px;
     border: 1px solid gray;
     border-radius: 10px;
@@ -18,7 +17,7 @@ form {
 
 .item-form {
     display: flex;
-    margin: 7px 10px;
+    margin: 10px 10px;
 }
 
 .item-form label{
@@ -59,4 +58,8 @@ form button:hover {
     background-color: rgb(122, 201, 224);
     color: rgb(5, 85, 5);
     transition: 1s;
+}
+
+a {
+    text-decoration: none;
 }
