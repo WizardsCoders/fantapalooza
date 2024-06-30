@@ -90,15 +90,15 @@ class Usuario:
         return self.cursor.rowcount > 0
     
 #main
-usuarios = Usuario(host='localhost', user='root', password='', database='miapp')
+usuarios = Usuario(host='nakisey.mysql.pythonanywhere-services.com', user='nakisey', password='fantapalooza', database='nakisey$miapp')
 #usuaruios = Usuario(host='USUARIO.mysql.pythonanywhere-services.com',
 #user='USUARIO', password='CLAVE', database='USUARIO$miapp')
 
 # Carpeta para guardar las imagenes
-ruta_destino = './static/imagenes/'
+ruta_destino = '/home/nakisey/mysite/static/imagenes/'
 #Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe
 #ser reemplazado por el nombre de usuario de Pythonanywhere
-#ruta_destino = '/home/USUARIO/mysite/static/imagenes'
+#ruta_destino = '/home/USUARIO/mysite/static/imagenes/'
 
 @app.route("/usuarios", methods=["GET"])
 def listar_usuarios():
