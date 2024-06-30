@@ -20,7 +20,7 @@ function obtenerUsuarios() {
             <td>${usuario.codigo}</td>
             <td>${usuario.nombre}</td>
             <td>${usuario.apellido}</td>
-            <td align="right">${usuario.usuario}</td>
+            <td>${usuario.usuario}</td>
             <td><buttononclick="eliminarUsuario('${usuario.codigo}')">Eliminar</button></td>
             `;
         });

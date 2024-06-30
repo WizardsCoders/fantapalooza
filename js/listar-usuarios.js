@@ -28,12 +28,12 @@ fetch(URL + 'usuarios')
 
         fila.innerHTML = '<td>' + usuario.codigo + '</td>' +
         '<td>' + usuario.nombre + '</td>' +
-        '<td align="right">' + usuario.apellido + '</td>' +
-        '<td align="right">' + usuario.precio + '</td>' +
-        '<td align="right">' + usuario.usuario + '</td>' +
+        '<td>' + usuario.apellido + '</td>' +
+        '<td>' + usuario.usuario + '</td>' +
+        '<td>' + usuario.contrasenia + '</td>' +
 
         // Mostrar miniatura de la imagen (probar ruta)
-        '<td><img src=/multimedia/' + usuario.imagen_url +' alt="Imagen del usuario" style="width:100px;"></td>' + 
+        '<td><img src=/multimedia/' + usuario.imagen_url +' alt="Imagen del usuario" width="80" height="80"></td>' + 
         //Al subir al servidor, deberá utilizarse la
         //siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
 

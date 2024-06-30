@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="multimedia/fantapalooza16pxFavicon.png" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/main-tablas-usuarios.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <script src="js/usuario-en-sesion.js"></script>
+    <script
+      src="https://kit.fontawesome.com/869045750e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Fantapalooza - Datos del Usuario</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="item-logo">
+        <h1>
+          <img
+            src="multimedia/fantapalooza40px.png"
+            alt="logo fantapalooza"
+          />
+        </h1>
+      </div>
+
+      <div class="info-evento">
+        <h2>28, 29 y 30 de Junio, 2024 <br />Campo Argentino de Polo</h2>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <ul>
+        <li id="nav-item-1"><a href="index.html">INICIO</a></li>
+        <li id="nav-item-2"><a href="fp-merch.html">TIENDA</a></li>
+        <li id="nav-item-3"><a href="galeria.html">GALERÍA</a></li>
+        <li id="nav-item-4"><a href="line-up.html">LINE UP</a></li>
+        <li id="nav-item-5"><a href="nosotros.html">NOSOTROS</a></li>
+        <li id="menu-iniciar-sesion">
+          <a href="ingresar.html">INICIAR SESIÓN</a>
+        </li>
+        <li id="menu-desplegable">
+          <i class="fa-solid fa-user"></i><a href="#" id="usuario-actual"></a>
+          <ul>
+            <li id="registro"><a href="datos-usuario.html">ALTA DE USUARIO</a></li>
+            <li id="lista-usuarios"><a href="lista-usuario.html">LISTA DE USUARIOS</a></li>
+            <li id="modificar-usuario"><a href="modificar-usuario.html">MODIFICAR USUARIO</a></li>
+            <li id="eliminar-usuario"><a href="eliminar-usuario.html">ELIMINAR USUARIO</a></li>
+            <li><button id="salir" onclick="eliminar_ls()">Salir</button><i class="fa-solid fa-right-to-bracket"></i></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2 id="nombre-tabla">Listado de los usuarios activos</h2>
+      <section>
+        <table> <!-- Se crea una tabla para mostrar los productos. -->
+            <thead> <!--Encabezado de la tabla con columnas para código,
+            descripción, cantidad, precio y acciones.-->
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+                <th>Imagen</th>
+            </tr>
+            </thead>
+            <tbody>
+            <td>1</td>
+            <td>Marisa</td>
+            <td>Aguero</td>
+            <td>florDeLoto</td>
+            <td>Capo</td>
+            <td><img src="multimedia/8.jpg" alt="" width="80" height="80"></td>
+          </tbody>
+          <tbody>
+            <td>2</td>
+            <td>Critian</td>
+            <td>Delgado</td>
+            <td>VanillaMuffin</td>
+            <td>Master</td>
+            <td><img src="multimedia/articulos-prueba.jpg" alt="" width="80" height="80"></td>
+          </tbody>
+          <tbody>
+            <td>Hola</td>
+            <td>Que</td>
+            <td>Hace</td>
+            </tbody>
+            </table><br>
+            <div class="contenedor-centrado">
+            <a href="index.html">Menu principal</a>
+            </div>
+      </section>
+      <script src="js/eliminar-usuario.js"></script>
+    </main>
+
+  <footer class="footer">
+    <iframe src="footer.html" frameborder="0" width="100%" height="750">
+    </iframe>
+</footer>
+    
+  </body>
+</html>

@@ -45,9 +45,10 @@
         <li id="menu-desplegable">
           <i class="fa-solid fa-user"></i><a href="#" id="usuario-actual"></a>
           <ul>
-            <li><p id="dinero-actual"></p></li>
-            <li><button id="agregar-dinero" onclick="agregarDinero()">Agregar $</button></li>
-            <li><button id="retirar-dinero" onclick="retirarDinero()">Retirar $</button></li>
+            <li id="registro"><a href="datos-usuario.html">ALTA DE USUARIO</a></li>
+            <li id="lista-usuarios"><a href="lista-usuario.html">LISTA DE USUARIOS</a></li>
+            <li id="modificar-usuario"><a href="modificar-usuario.html">MODIFICAR USUARIO</a></li>
+            <li id="eliminar-usuario"><a href="eliminar-usuario.html">ELIMINAR USUARIO</a></li>
             <li><button id="salir" onclick="eliminar_ls()">Salir</button><i class="fa-solid fa-right-to-bracket"></i></li>
           </ul>
         </li>
@@ -60,6 +61,7 @@
         <form
           action=""
           id="formulario"
+          enctype="multipart/form-data"
           onsubmit="return validarFormulario()"
         >
           <label for="nombre">Nombre:</label>
@@ -159,6 +161,7 @@
         </form>
       </section>
       <script src="js/validacion-formulario.js"></script>
+      <script src="js/agregar-usuario.js"></script>
     </main>
 
   <footer class="footer">
