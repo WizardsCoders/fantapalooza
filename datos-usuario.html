@@ -58,11 +58,15 @@
     <main>
       <section>
         <h2>Formulario de registro</h2>
-        <form
+        <!-- <form
           action=""
           id="formulario"
           enctype="multipart/form-data"
           onsubmit="return validarFormulario()"
+        > -->
+        <form
+          id="formulario"
+          enctype="multipart/form-data"
         >
           <label for="nombre">Nombre:</label>
           <input
@@ -97,7 +101,7 @@
           <label for="imagenUsuario">Imagen:</label>
           <input type="file" name="imagenUsuario" id="imagenUsuario" accept="image/*" />
           <br />
-          <label for="telefono">Telefono:</label>
+          <!-- <label for="telefono">Telefono:</label>
           <input
             type="number"
             name="telefono"
@@ -155,9 +159,11 @@
             cols="20"
             rows="5"
           ></textarea
-          ><br />
+          ><br /> -->
 
-          <input type="submit" value="Enviar" onclick="enviarFormulario()" />
+          <!-- <input type="submit" value="Enviar" onclick="enviarFormulario()" /> -->
+          <button type="submit">Agregar Usuario</button>
+          <a href="index.html">Menu principal</a>
         </form>
       </section>
       <script src="js/validacion-formulario.js"></script>

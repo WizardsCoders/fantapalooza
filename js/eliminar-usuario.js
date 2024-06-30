@@ -8,9 +8,7 @@ function obtenerUsuarios() {
     })
     // Asigna los datos de los Usuarios obtenidos a la propiedad Usuarios del estado.
     .then(data => {
-        const usuariosTable =
-
-        document.getElementById('usuarios-table').getElementsByTagName('tbody')[0];
+        const usuariosTable = document.getElementById('usuarios-table').getElementsByTagName('tbody')[0];
 
         usuariosTable.innerHTML = ''; // Limpia la tabla antes de insertar nuevos datos
 

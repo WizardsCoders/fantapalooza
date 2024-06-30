@@ -18,16 +18,16 @@ document.getElementById('formulario').addEventListener('submit',function (event)
     .then(function (response) {
         if (response.ok) {
     //Si la respuesta es exitosa, convierte los datos de la respuesta a formato JSON.
-        return response.json();
+            return response.json();
         } else {
-    // Si hubo un error, lanzar explícitamente una excepción para ser "catcheada" más adelante
-        throw new Error('Error al agregar el usuario.');
+    // Si hubo un error, lanza explícitamente una excepción para ser "catcheada" más adelante
+            throw new Error('Error al agregar el usuario.');
         }
     })
+    
     //Respuesta OK, muestra una alerta informando que el
     //Usuario se agregó correctamente y limpia los campos del formulario para
     //que puedan ser utilizados para un nuevo Usuario.
-
     .then(function (data) {
     alert('Usuario agregado correctamente.');
     })
