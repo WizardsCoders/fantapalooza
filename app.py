@@ -102,8 +102,8 @@ ruta_destino = './static/imagenes/'
 
 @app.route("/usuarios", methods=["GET"])
 def listar_usuarios():
-    usuarios = usuarios.listar_usuarios()
-    return jsonify(usuarios)
+    listaUsuarios = usuarios.listar_usuarios()
+    return jsonify(listaUsuarios)
 
 @app.route("/usuarios/<int:codigo>", methods=["GET"])
 def mostrar_usuario(codigo):
