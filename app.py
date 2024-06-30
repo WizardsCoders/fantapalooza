@@ -145,7 +145,7 @@ def modificar_usuario(codigo):
 
     # Verifica si se proporcionó una nueva imagen
     if 'imagen' in request.files:
-        imagen = request.files['imagen']
+        imagen = request.files['imagenUsuario']
         
         # Procesamiento de la imagen
         nombre_imagen = secure_filename(imagen.filename)

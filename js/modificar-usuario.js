@@ -28,18 +28,21 @@ function obtenerUsuario(event) {
     fetch(URL + 'usuarios/' + codigo)
         .then(response => {
             if (response.ok) {
-            return response.json()
+                return response.json()
             } else {
-            throw new Error('Error al obtener los datos del Usuario.')
+                throw new Error('Error al obtener los datos del Usuario.')
             }
         })
         .then(data => {
+            console.log('Datos del usuario:', data);
             nombre = data.nombre;
             apellido = data.apellido;
             usuario = data.usuario;
             contrasenia = data.contrasenia;
             imagen_url = data.imagen_url;
             mostrarDatosUsuario = true; //Activa la vista del segundo formulario
+
+            console.log('mostrarDatosUsuario actualizado:', mostrarDatosUsuario);
 
             mostrarFormulario();
         })
@@ -103,7 +106,7 @@ function guardarCambios(event) {
         
     // Si se ha seleccionado una imagen nueva, la añade al formData.       
     if (imagenSeleccionada) {
-        formData.append('imagen', imagenSeleccionada,imagenSeleccionada.name);       
+        formData.append('imagen_url', imagenSeleccionada,imagenSeleccionada.name);       
     }
 
     fetch(URL + 'usuarios/' + codigo, {
