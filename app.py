@@ -120,7 +120,7 @@ def agregar_usuario():
     apellido = request.form['apellido']
     usuario = request.form['usuario']
     contrasenia = request.form['contrasenia']
-    imagen = request.files['imagen']
+    imagen = request.files['imagenUsuario']
     nombre_imagen = ""
 
     # Genero el nombre de la imagen
