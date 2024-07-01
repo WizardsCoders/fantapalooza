@@ -155,5 +155,5 @@ function limpiarFormulario() {
     imagenSeleccionada = null;
     imagenUrlTemp = null;
     mostrarDatosUsuario = false;
-    document.getElementById('datos-Usuario').style.display = 'none';
+    document.getElementById('datos-usuario').style.display = 'none';
 }
